@@ -17,7 +17,7 @@ Microsoft Sentinel provides a "trial mode" where data ingestion up to 10GB/day i
 
 ## Step 1: The Microsoft Sentinel workspace
 
-In this exercise we will show you how to create a brand new Microsoft Sentinel workspace to store your data. If you already have a pre-existing one that you would like to use, you can skip to [Exercise 2](Module-1-Setting-up-the-environment.md#exercise-2-deploy-the-microsoft-sentinel-training-lab-solution).
+In this step we will create a brand new Microsoft Sentinel workspace to store your data. If you already have a pre-existing one that you would like to use, you can skip to [Step 2](Module-1-Setting-up-the-environment.md#exercise-2-deploy-the-microsoft-sentinel-training-lab-solution).
 
 1. Navigate to the [Azure Portal](http://portal.azure.com) and log in with your account.
 
@@ -47,22 +47,21 @@ Click **Review + create** and then **Create** after the validation completes. Th
 
 7. The deployment will begin. When it's complete in a minute or two, your Microsoft Sentinel workspace is ready to use!
 
+## Step 2: Deploy the Microsoft Sentinel Training Lab Solution
 
-### Exercise 2: Deploy the Microsoft Sentinel Training Lab Solution
-
-In this exercise you will deploy the Training Lab solution into your existing workspace. This will ingest pre-recorded data (~20 MB) and create several other artifacts that will be used during the exercises.
+In this step you will deploy the Training Lab solution into your existing workspace. This will ingest pre-recorded data (~20 MB) and create several other artifacts that will be used during the exercises.
 
 1. In the Azure Portal, go to the top search bar and type *Microsoft Sentinel Training*. Select the **Microsoft Sentinel Training Lab Solution** marketplace item.
 
-![deployment](../Images/deployment5.png)
+![](/images/88File.jpg)
 
 2. Read the solution description and click **Create** at the top.
 
-![deployment](../Images/deployment6.png)
+![](/images/87File.jpg)
 
-3. In the Basics tab, select the Subscription, Resource Group and Workspace that you created in Exercise 1, or provide the details for your existing workspace. Optionally, review the different tabs (Workbooks, Analytics, Hunting Queries, Watchlists, Playbooks) in the solution. When ready, click on **Review + create**.
+3. In the Basics tab, select the Subscription, Resource Group and Workspace that you created in Step 1, or provide the details for your existing workspace. Optionally, review the different tabs (Workbooks, Analytics, Hunting Queries, Watchlists, Playbooks) in the solution. When ready, click on **Review + create**.
 
-![deployment](../Images/deployment7.png)
+![](/images/86File.jpg)
 
 
 1. Once validation is ok, click **Create**. Note that the deployment process takes **about 15 minutes**, in part because we want to make sure all the ingested data is ready for you to use once finished.
@@ -71,29 +70,29 @@ In this exercise you will deploy the Training Lab solution into your existing wo
 
 On the home page you should see some ingested data and several recent incidents. Don't worry if you don't see the incidents initially as in the screenshot below, they might take a few minutes to be raised.
 
-![deployment](../Images/deployment8.png)
+![](/images/85File.jpg)
 
+## Step 3: Configure Microsoft Sentinel Playbook
 
-### Exercise 3: Configure Microsoft Sentinel Playbook
-
-In this exercise, we will configure a Playbook which will be used later in the lab. We're going to allow our playbook to access Sentinel.
+In this step, we will configure a Playbook which will be used later in the lab. We're going to allow our playbook to access Sentinel.
 
 1. Navigate to the resource group where the lab has been deployed.
 
 2. In the resource group you should see an API Connection resource called **azuresentinel-Get-GeoFromIpAndTagIncident**, click on it.
 
-![playbook1](../Images/playbook1.png)
+![](/images/84File.jpg)
 
 3. Click on Edit **API connection** under **General**.
 
-![playbook2](../Images/playbook2.png)
+![](/images/83File.jpg)
 
 1. Click on **Authorize** and a new window will open to chose an account. Pick the user that you want to authenticate with. This should normally be the user that you're logged in with.
 
-![playbook3](../Images/playbook3.png)
+![](/images/82File.jpg)
+![](/images/81File.jpg)
 
 5. Click **Save**.
 
-![playbook4](../Images/playbook4.png)
+![](/images/80File.jpg)
 
 **Congratulations, you have completed Module 1!**. You can now continue to **[Module 2 - Data Connectors](./Module-2-Data-Connectors.md)**
