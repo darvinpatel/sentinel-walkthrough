@@ -41,7 +41,9 @@ Click **Review + create** and then **Create** after the validation completes. Th
 
 6.  You will be redirected back to the *Add Microsoft Sentinel to a workspace*. Type the name of your new workspace in the search box, select your workspace and click **Add** at the bottom.
 
-![deployment](../Images/deployment4.png)
+![](/images/90File.jpg)
+![](/images/89File.jpg)
+> Select the newly created workspace to add it to Sentinel
 
 7. The deployment will begin. When it's complete in a minute or two, your Microsoft Sentinel workspace is ready to use!
 
