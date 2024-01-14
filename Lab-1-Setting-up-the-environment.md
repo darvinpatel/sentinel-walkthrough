@@ -95,4 +95,4 @@ In this step, we will configure a Playbook which will be used later in the lab. 
 
 ![](/images/80File.jpg)
 
-**Congratulations, you have completed Module 1!**. You can now continue to **[Module 2 - Data Connectors](./Module-2-Data-Connectors.md)**
+**Congratulations, you have completed Module 1!**. You can now continue to **[Lab 2 - Data Connectors](./Lab-2-Data-Connectors.md)**
