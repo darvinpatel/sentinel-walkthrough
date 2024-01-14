@@ -17,7 +17,7 @@ Microsoft Sentinel provides a "trial mode" where data ingestion up to 10GB/day i
 
 ## Step 1: The Microsoft Sentinel workspace
 
-In this step we will create a brand new Microsoft Sentinel workspace to store your data. If you already have a pre-existing one that you would like to use, you can skip to [Step 2](Module-1-Setting-up-the-environment.md#exercise-2-deploy-the-microsoft-sentinel-training-lab-solution).
+In this step we will create a brand new Microsoft Sentinel workspace to store your data. If you already have a pre-existing one that you would like to use, you can skip to [Step 2](Module-1-Setting-up-the-environment.md#step-2-deploy-the-microsoft-sentinel-training-lab-solution).
 
 1. Navigate to the [Azure Portal](http://portal.azure.com) and log in with your account.
 
