@@ -35,7 +35,7 @@ In this exercise we will show you how to create a brand new Microsoft Sentinel w
     - **Workspace Name**: provide a name for the Microsoft Sentinel workspace. Please note that the workspace name should include 4-63 letters, digits or '-'. The '-' shouldn't be the first or the last symbol.
       - Example: `sentinelStarterWorkspace`
 
-![](../images/91File.jpg)
+![](/images/91File.jpg)
 
 Click **Review + create** and then **Create** after the validation completes. The creation takes a few seconds.
 
