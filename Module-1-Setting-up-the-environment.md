@@ -23,13 +23,9 @@ In this exercise we will show you how to create a brand new Microsoft Sentinel w
 
 2. In the top search bar, type *Sentinel* and click on **Microsoft Sentinel**.
 
-![deployment](../Images/deployment1.png)
-
 3. In the Microsoft Sentinel screen, click **Create** at the top left.
 
 4. You can choose to add Microsoft Sentinel to an existing Log Analytics workspace or build a new one. We will create a new one, so click on **Create a new workspace**.
-
-![deployment](../Images/deployment2.png)
 
 5. In the Create Log Analytics workspace page, fill out the form as follows:
 
@@ -37,9 +33,9 @@ In this exercise we will show you how to create a brand new Microsoft Sentinel w
     - **Resource Group**: select an existing resource group or create a new resource group (recommended) that will host the lab resources
     - **Region**: from the drop down, select the Azure region where the lab will be located
     - **Workspace Name**: provide a name for the Microsoft Sentinel workspace. Please note that the workspace name should include 4-63 letters, digits or '-'. The '-' shouldn't be the first or the last symbol.
-      - Example: `sentinel-training-ws`
+      - Example: `sentinelStarterWorkspace`
 
-![deployment](../Images/deployment3.png)
+![](/Images/91File.jpg)
 
 Click **Review + create** and then **Create** after the validation completes. The creation takes a few seconds.
 
