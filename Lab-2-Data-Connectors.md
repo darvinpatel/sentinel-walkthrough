@@ -1,7 +1,4 @@
-# Module 2 - Data Connectors
-
-#### 🎓 Level: 100 (Beginner)
-#### ⌛ Estimated time to complete this lab: 15 minutes
+# Lab 2 - Data Connectors
 
 ## Objectives
 
@@ -9,13 +6,13 @@ In this module you will learn how to install and enable Data Connectors in Micro
 
 #### Prerequisites
 
-This module assumes that you have completed [Module 1](Module-1-Setting-up-the-environment.md), as you will need a Microsoft Sentinel workspace provisioned.
+This module assumes that you have completed [Module 1](Lab-1-Setting-up-the-environment.md), as you will need a Microsoft Sentinel workspace provisioned.
 
 Some of the data connectors that will be used in this lab require specific permissions on the workspace or your Azure subscription. If you don't have the appropriate permissions, you can still continue doing the rest of the labs.
 
 
 
-### Exercise 1: Enable the Azure Activity connector
+## Step 1: Enable the Azure Activity connector
 
 This exercise shows you how to enable the Azure Activity data connector. This connector imports logs from Azure management plane activities, which lets you track Azure administrative activity within the subscription.
 
@@ -27,7 +24,9 @@ This exercise shows you how to enable the Azure Activity data connector. This co
 
 3. Tick the **Azure Activity** solution and click either **Install** button.
 
-![azactivity0](../Images/azactivity0.png)
+![](/images/79File.jpg)
+![](/images/78File.jpg)
+![](/images/77File.jpg)
 
 4. When the deployment completes, select **Data Connectors** in the **Configuration** section of your Sentinel workspace.
 
@@ -35,7 +34,7 @@ This exercise shows you how to enable the Azure Activity data connector. This co
    
 6. Select the **Azure Activity** connector and click on **Open connector page** in the right-hand panel.
 
-![azactivity2](../Images/azactivity2.png)
+![](/images/76File.jpg)
 
 7. On the Azure Activity connector page, scroll down through the Configuration instructions until you get to number 2, **Connect your subscriptions through diagnostic settings new pipeline**. This method leverages Azure Policy and it brings many improvements compared to the older direct settings method (details about these improvements can be found [here](https://techcommunity.microsoft.com/t5/azure-sentinel/moving-azure-activity-connector-to-an-improved-method/ba-p/2479552)).
 
