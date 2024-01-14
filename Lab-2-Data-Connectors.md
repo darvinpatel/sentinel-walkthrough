@@ -6,7 +6,7 @@ In this module you will learn how to install and enable Data Connectors in Micro
 
 #### Prerequisites
 
-This module assumes that you have completed [Module 1](Lab-1-Setting-up-the-environment.md), as you will need a Microsoft Sentinel workspace provisioned.
+This module assumes that you have completed [Lab 1](Lab-1-Setting-up-the-environment.md), as you will need a Microsoft Sentinel workspace provisioned.
 
 Some of the data connectors that will be used in this lab require specific permissions on the workspace or your Azure subscription. If you don't have the appropriate permissions, you can still continue doing the rest of the labs.
 
