@@ -153,19 +153,18 @@ As your next step, you would like to identify the hosts that might have been com
 
 10. As you can see, besides **ClientPC**, there are two additional computers where the malicious DLL and named pipe have been found. Bookmark all three records, by selecting them with the tickboxes on the left, and clicking on **Add bookmark**.
 
-    ![incident6](../Images/incident6.png)
 
 11. In the *Add bookmarks* window that appears, click on **Create** to create the bookmarks. As you can see entity mapping is already done for you.
 
-    ![incident7](../Images/incident7.png)
 
 12. Wait until the operation finishes, then close the log search using the ✖ at the top right corner. This will land you in the Bookmarks tab inside the Hunting menu (navigate there if not), where you should see your two new bookmarks created. Select both of them and click on **Incident actions** at the top and then **Add to existing incident**.
 
-    ![incident8](../Images/incident8.png)
+    ![](/images/33File.jpg)
 
 13. From the list, pick the Solorigate incident that is assigned to you, and click *Add*.
 
-    ![incident9](../Images/incident9.png)
+    ![](/images/32File.jpg)
+    ![](/images/31File.jpg)
 
 At this point you can ask the Operations team to isolate the hosts affected by this incident. **Note:** In a real SOC, this step could potentially be automated using a Playbook.
 
@@ -178,15 +177,13 @@ Now, we will add the IP address related to the incident to our list of *Indicato
 
 15. Select the *Solorigate* incident and **copy the IP address** involved. Notice that you now have more computer entities available for selection, as they were added to the incident from the bookmarks' entities.
 
-    ![incident10](../Images/incident10.png)
 
 16. Go to the **Threat Intelligence** blade in Microsoft Sentinel and click **Add new** at the top.
 
-    ![incident11](../Images/incident11.png)
 
 17. Enter the following details in the *New indicator* dialog, with *Valid from* being today's date and *Valid until* being two months after. Then click **Apply**.
 
-    ![incident12](../Images/incident12.png)
+  ![](/images/30File.jpg)
 
 
 
@@ -198,15 +195,13 @@ We will now prepare the incident for handover to another team (maybe Operations 
 
 2.  Move to the **Comments** tab.
 
-    ![incident13](../Images/incident13.png)
-
 3.  Enter information about all the steps performed. 
     As an example:
 
-    ![incident14](../Images/incident14.png)
+    ![](/images/29File.jpg)
 
 At this point you would hand over the incident to the appropriate team. You could: 
 - copy the link directly from the bottom of the incident preview if communicating out-of-band
 - or assign the incident directly to the person or team alias
 
-**Congratulations, you have completed Module 4!**. You can now continue to **[Module 5 - Hunting](./Module-5-Hunting.md)**
+**Congratulations, you have completed Lab 4!**. You can now continue to **[Lab 5 - Hunting](./Lab-5-Hunting.md)**
