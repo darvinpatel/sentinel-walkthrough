@@ -1,4 +1,4 @@
-# Module 3 - Analytics Rules
+# Lab 3 - Analytics Rules
 
 ## Objectives
 
