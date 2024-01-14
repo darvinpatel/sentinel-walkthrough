@@ -57,8 +57,6 @@ To do so, press on the multi-select checkboxes for the queries you want to run. 
 15.	Our SOC analysts needs to know which application from all the above result set is critical and has a security risk. One way to do this is to open Azure Active Directory for each application from the hunting results, check their permissions, and validate the risk. Our SOC analyst follows the organization knowledge base that guides him to review a list for all the AAD applications with their risk levels.
 16.	The organization knowledge base has [this CSV file](../Artifacts/Telemetry/HighRiskApps.csv) that contains a list with the AAD applications and their associated risk level.
 17. To import this list in Sentinel page go to  **Configuration**, select **Watchlist**.
-
-![](/images/20File.jpg)
     
 16. In the watchlist wizard enter the following and click **Next: Source:**
     
@@ -66,18 +64,14 @@ To do so, press on the multi-select checkboxes for the queries you want to run. 
     - Description: **High Risk Applications**
     - Alias: **HighRiskApps**
 
-![](/images/19File.jpg)
-![](/images/18File.jpg)
 
 17. Download the [CSV file](../Artifacts/Telemetry/HighRiskApps.csv) to your desktop. 
 
 18. In the watchlist wizard, upload the file from your desktop, use **AppName** as the SearchKey, check the **File Preview** and click **Next: Review and Create**.
 
-![](/images/17File.jpg)
 
 19. Click Create to finish the wizard. The watchlist data takes about 1 minute to be available in the workspace. Wait until the Rows number changes from 0 to 5. Then click on **View in Logs**
 
-![](/images/16File.jpg)
 
 As you can see, this watchlist stores the application name, risk level and permissions. To correlate this information with our hunting results set, we need to run a simple join query.
 
