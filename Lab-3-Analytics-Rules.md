@@ -210,7 +210,9 @@ Off to a great start! Now, to make your SOC more productive, save analyst time, 
 
 4. Click the **Incident settings** button or the tab at the top.
 
-5. As your SOC is under stress, we want to *reduce the number of alerts* and be sure that when analyst handle a specific incident, he/she will see all related events or other incidents related to the same attack story. For that we will implement the **Alert grouping** feature. To do so, follow the steps below: 
+![](/images/50File.jpg)
+
+6. As your SOC is under stress, we want to *reduce the number of alerts* and be sure that when analyst handle a specific incident, he/she will see all related events or other incidents related to the same attack story. For that we will implement the **Alert grouping** feature. To do so, follow the steps below: 
 
 - On the **Incident settings** tab under **Alert grouping**: 
   - Set *Group related alerts into incidents* to **Enabled**.
@@ -219,11 +221,13 @@ Off to a great start! Now, to make your SOC more productive, save analyst time, 
 
 6. Skip to **Review and create** and **Save** your new Analytics rule.
 
+![](/images/49File.jpg)
+
 The next time the rule is scheduled - *as long as the training data was onboarded within its lookback period* - it should find the logs from the OfficeActivity_CL custom log table and raise grouped Alerts as Incidents. 
 
 **Tip:** You should already be able to see the sample Incident with a similar outcome from the rule installed when the Training Lab content was onboarded (if it was onboarded recently).
  	
-### Exercise 5: Review resulting security incident
+## Step 5: Review resulting security incident
 	
 Now we've created a custom Analytics rule to detect malicious inbox rule creation, let's quickly review an Incident produced by a similar Analytics rule which was installed and run when this training lab content was onboarded. 
 
@@ -254,11 +258,13 @@ Now we've created a custom Analytics rule to detect malicious inbox rule creatio
 
 	... so you can see a snapshot of the most critical information and perform basic incident management directly from the summary panel.
 
-4. Click **View full details** at the bottom
+![](/images/48File.jpg)
 
-	![Incident Details](../Images/m3incident_pane.gif?raw=true)
+5. Click **View full details** at the bottom
 
-5. On the full **Incident page** (Preview), you can find:
+![](/images/47File.jpg)
+
+6. On the full **Incident page** (Preview), you can find:
    - The same quick panel (now on the left)
    - The **Incident Actions** button at the top right
    - The **Overview tab** which includes:
@@ -269,23 +275,21 @@ Now we've created a custom Analytics rule to detect malicious inbox rule creatio
    - A set of **Incident insights** in the right-hand panel, if available
   
   
-6. After looking over the Incident, click the **Entities** tab to list all the mapped entities related to this incident.
+7. After looking over the Incident, click the **Entities** tab to list all the mapped entities related to this incident.
  
-	![Incident Entities List](../Images/m3-incident-entity.png)
 
-7. Click the entity **"AdeleV@contoso.OnMicrosoft.com"** from the incident Entities list
+8. Click the entity **"AdeleV@contoso.OnMicrosoft.com"** from the incident Entities list
    - This action will navigate to the **Entities tab**, a list of entities with 3 sub-tabs on the right.
    - Clicking each tab will show different information about the Entity and its state
      - Note: State information is pulled from various sources: Some may be pulled directly from Azure services (like Microsoft Entra ID or Azure Virtual Machine host information), some from onboarded data sources, and some from UEBA (if enabled). Note that for *AdeleV*, our fake user, there's no information available in your user directory, but for production environments much more information is typically available!
    
-   ![Incident Entity Timeline](../Images/m3-incident-entity-tab2.png) ![Incident Entity Insights](../Images/m3-incident-entity-tab3.png)
-   
+  
 - Clicking the **View Full Details** button at the bottom will take you to the full Entity page
 
 
-**Congratulations, you have completed Module 3!**
+**Congratulations, you have completed Lab 3!**
 
-You can now continue to **[Module 4 - Incident Management](./Module-4-Incident-Management.md)**
+You can now continue to **[Lab 4 - Incident Management](./Lab-4-Incident-Management.md)**
 
 ## Further reading
 - Create incidents from Microsoft security alerts: https://learn.microsoft.com/en-us/azure/sentinel/create-incidents-from-alerts
