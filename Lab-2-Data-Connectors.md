@@ -75,8 +75,6 @@ This exercise shows you how to enable the Azure Activity data connector. This co
 Now we've connected Activity, we'll move on to some other connectors.
 
 
-
-
 ## Step 2: Enable the Microsoft Defender for Cloud Data Connector
 
 This exercise shows you how to enable the **Microsoft Defender for Cloud** data connector. This connector allows you to stream security alerts from Microsoft Defender for Cloud into Microsoft Sentinel, so you can incorporate Alerts from Defender, view Defender data in workbooks, and investigate and respond to incidents.
@@ -131,4 +129,4 @@ Threat Intelligence indicators will start being ingested into your `ThreatIntell
 
 #### Next Step
 
-**Congratulations, you have completed Module 2!**. Continue to **[Module 3 - Analytics Rules](./Module-3-Analytics-Rules.md)**
+**Congratulations, you have completed Module 2!**. Continue to **[Module 3 - Analytics Rules](./Lab-3-Analytics-Rules.md)**
