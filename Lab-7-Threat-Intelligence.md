@@ -1,18 +1,16 @@
-# Module 7 - Threat Intelligence
+# Lab 7 - Threat Intelligence
 
-#### 🎓 Level: 300 (Intermediate)
-#### ⌛ Estimated time to complete this lab: 20 minutes
 
-This module will demonstrate how to use Microsoft Sentinel Threat Intelligence (TI) features and product integration points.
-During this module we rely on TI data that we ingested in [Module 2](Module-2-Data-Connectors.md), so please make sure you have completed that module.
+This lab will demonstrate how to use Microsoft Sentinel Threat Intelligence (TI) features and product integration points.
+During this module we rely on TI data that we ingested in [Lab 2](Lab-2-Data-Connectors.md), so please make sure you have completed that module.
 In this module we will also discover how to visualize and use this data as part of investigation and detection.
 
 
 #### Prerequisites
-This module assumes that you completed [Module 1](Module-1-Setting-up-the-environment.md), and [Module 2](Module-2-Data-Connectors.md) exercise 3 which enables the Microsoft Defender Threat Intelligence (Preview) connector.
+This module assumes that you completed [Lab 1](Lab-1-Setting-up-the-environment.md), and [Lab 2](Lab-2-Data-Connectors.md) step 3 which enables the Microsoft Defender Threat Intelligence (Preview) connector.
 
 
-### Exercise 1: Threat Intelligence data connectors
+## Step 1: Threat Intelligence data connectors
 
 #### Task 1 : Microsoft Defender Threat Intelligence (Preview)
 
@@ -22,11 +20,11 @@ This connector is currently in public preview and ingests Microsoft Threat Intel
 
 2. On the bottom right pane press **Open connector page**
 
-![ti](../Images/TI1.png)
+![](/images/14File.jpg)
 
 3. Review the data received and confirm that the connector is already ingesting indicators.
 
- ![ti](../Images/TI9.png)
+![](/images/13File.jpg)
 
 ### Exercise 2: Explore the Threat Intelligence menu
 
@@ -45,7 +43,7 @@ The ingested Indicators of Compromise (IOC) coming from any of these TI feeds, i
 | getschema
    ```
 
-![schema](../Images/TI-schema.png)
+![](/images/12File.jpg)
 
 3.	Let's explore and delve into the TI table. Run the following query which takes 10 records from the table:
 
@@ -61,7 +59,7 @@ To understand if a specific IOC is active, we need to have a closer look at the 
 
 On our example, we can see that the IOC is an IP that is active with future Expiration date. This means that our matching detection rules (which we will review in the next exercise) will take this IOC into consideration when correlating with data sources. 
 
-![Acitve](../Images/TI-active.png)
+
 
 
 #### Task 2: Review and manage TI IOC's in Microsoft Sentinel Threat intelligence menu.
@@ -72,16 +70,15 @@ After we ingested our TI data into the ThreatIntelligenceIndicator table, our mi
 1. On the Microsoft Sentinel left menu press on the Threat intelligence (Preview)
 This menu is a visual representation of the ThreatIntelligenceIndicator table.
 
-![Acitve](../Images/m7-Tiblade.png)
+![](/images/11File.jpg)
 
 
 2. Select one IOC from the main pane and notice that the right  pane changed accordingly and present the metadata of the selected IOC.
 
-![Acitve](../Images/m7-Tiblade1.png)
 	
 3. On the top area of the main blade, we can filter the list of the IOC's based on a specific parameters. In our case, we only ingested one type of IOC (IP), but the **Type** filter allow us to filter based on different types. If we ingested IOC's from multiple TI data sources, the **source** filter allows us to slice it.
 
-![Acitve](../Images/m7-ITbladeFilter.png)
+![](/images/10File.jpg)
 
 
 #### Task 3: add new TI IOC manually in Microsoft Sentinel Threat intelligence menu
@@ -92,11 +89,10 @@ Part of the SOC analyst's job is to manually add an IOC into the TI index from t
 
 2. In the drop down, select **url** and add this url: *http://phishing.com*.
 
-![Acitve](../Images/TI2.png)
 
 3. Add **tags** that will help us to add metadata on this IOC. In our example, we want to tag this IOC with its associated incident ID. On the add tag pop-up write **Incident 4326** and press **OK**.
 	 
-![Acitve](../Images/m7-tibladeaddtag.png)
+![](/images/9File.jpg)
 
 4. On the **Thread types** select **malicious-activity**
 	
@@ -104,7 +100,7 @@ Part of the SOC analyst's job is to manually add an IOC into the TI index from t
 
 6. Press **Apply**
 
-![Acitve](../Images/m7-fullnewIOC.png)
+![](/images/8File.jpg)
 
 7. Notice to the newly created IOC on the TI menu.
 
@@ -117,7 +113,6 @@ ThreatIntelligenceIndicator
 
 9. As we want to view the description column, we need to modify the column order for the menu by select the **column** button on the top bar. 
 
-![Acitve](../Images/m7-tibladecolumnorder.png)
 
 10. Once the **Choose columns** opened in the right side, select **Description** and click **Apply**.
 
@@ -125,7 +120,7 @@ After couple of days we got a new information from our internal TI team that thi
 
 12. Select the newly created manual IOC and press delete
 
-![Acitve](../Images/m7-deleteTI.png)
+![](/images/7File.jpg)
 
 
 ### Exercise 3: Analytics Rules based on Threat Intelligence data
@@ -138,7 +133,6 @@ One of the main values of the TI data is on Analytics rules. In this exercise we
 
 2. Click on the **Add Filter** and choose **Data Sources** from the dropdown, then select **Microsoft Defender Threat Intelligence (Preview)**. Click **Apply** to apply the filter.
 
-![TImapping](../Images/TI10.png)
 
 3. As you can see, there is a long list of resulting alert templates. These all will correlate your different data sources with the IOCs present in your TI table (ThreatIntelligenceIndicator), to detect any trace of malicious indicators of compromise in your organization's logs. You can see more information about these rules [here](https://docs.microsoft.com/azure/sentinel/work-with-threat-indicators#detect-threats-with-threat-indicator-based-analytics).
 
@@ -152,7 +146,6 @@ One of the main values of the TI data is on Analytics rules. In this exercise we
 
 3. Select the rule template and notice the different data sources that are supported (at the time of writing, these are CEF, Syslog and DNS). Click on **Create rule**.
 
-![TImatching](../Images/TI3.png)
 
 4. In the wizard, click on **Review** and **Create**.
 
@@ -167,17 +160,16 @@ Workbooks provide powerful interactive dashboards that give you insights into al
 
 3. Select the **Save** button and choose an Azure location to store the workbook. This step is required if you are going to modify the workbook in any way and save your changes.
 
-![TImatching](../Images/TI5.png)
+![](/images/6File.jpg)
 
 4. Now select the **View saved workbook** button to open the workbook for viewing and editing. 
 
 5. You will find some pre-built visualizations that show you the indicators imported into Sentinel over time, by type and provider. To modify or add a new chart, select the **Edit** button at the top of the page to enter editing mode for the workbook.
 
-![TIworkbook](../Images/TI6.png)
+![](/images/5File.jpg)
 
 6. Let's now add a new chart of threat indicators by threat type. To do this, scroll to the very bottom of the page and select **Add Query**.
 
-![TIworkbook](../Images/TI7.png)
 
 7. Add the following text to the Log Analytics workspace Log Query text box:
 
@@ -188,8 +180,7 @@ ThreatIntelligenceIndicator
 
 8. In the Visualization drop-down, select **Bar chart**.
 
-![TIworkbook](../Images/TI8.png)
 
 9. Select the Done editing button. You’ve created a new chart for your workbook 😀.
 
-**Congratulations, you have completed Module 7!**. You can now continue to **[Module 8 - Microsoft Sentinel Solutions](./Module-8-Sentinel-Solutions.md)**
+**Congratulations, you have completed Lab 7!**. You can now continue to **[Lab 8 - Microsoft Sentinel Solutions](./Lab-8-Sentinel-Solutions.md)**
