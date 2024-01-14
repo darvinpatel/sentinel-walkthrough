@@ -19,15 +19,15 @@ Microsoft Sentinel provides a "trial mode" where data ingestion up to 10GB/day i
 
 In this exercise we will show you how to create a brand new Microsoft Sentinel workspace to store your data. If you already have a pre-existing one that you would like to use, you can skip to [Exercise 2](Module-1-Setting-up-the-environment.md#exercise-2-deploy-the-microsoft-sentinel-training-lab-solution).
 
-- Navigate to the [Azure Portal](http://portal.azure.com) and log in with your account.
+1. Navigate to the [Azure Portal](http://portal.azure.com) and log in with your account.
 
-- In the top search bar, type *Sentinel* and click on **Microsoft Sentinel**.
+2. In the top search bar, type *Sentinel* and click on **Microsoft Sentinel**.
 
 ![deployment](../Images/deployment1.png)
 
-- In the Microsoft Sentinel screen, click **Create** at the top left.
+3. In the Microsoft Sentinel screen, click **Create** at the top left.
 
-- You can choose to add Microsoft Sentinel to an existing Log Analytics workspace or build a new one. We will create a new one, so click on **Create a new workspace**.
+4. You can choose to add Microsoft Sentinel to an existing Log Analytics workspace or build a new one. We will create a new one, so click on **Create a new workspace**.
 
 ![deployment](../Images/deployment2.png)
 
