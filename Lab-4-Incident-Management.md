@@ -149,7 +149,7 @@ As your next step, you would like to identify the hosts that might have been com
 
 9.  You should see a total of three results. Click on **View Results**
 
-    ![incident5](../Images/incident5.png)
+    ![](/images/34File.jpg)
 
 10. As you can see, besides **ClientPC**, there are two additional computers where the malicious DLL and named pipe have been found. Bookmark all three records, by selecting them with the tickboxes on the left, and clicking on **Add bookmark**.
 
