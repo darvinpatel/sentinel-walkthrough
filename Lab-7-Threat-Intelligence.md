@@ -150,7 +150,7 @@ One of the main values of the TI data is on Analytics rules. In this exercise we
 4. In the wizard, click on **Review** and **Create**.
 
 
-### Exercise 5: Treat Intelligence workbook
+### Exercise 5: Threat Intelligence workbook
 
 Workbooks provide powerful interactive dashboards that give you insights into all aspects of Microsoft Sentinel, and threat intelligence is no exception. In this exercise you will explore a purpose-built workbook to visualize key information about your threat intelligence in Microsoft Sentinel.
 
